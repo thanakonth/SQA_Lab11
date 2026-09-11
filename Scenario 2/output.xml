@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.0 on win32)" generated="2026-09-12T03:29:03.283565" rpa="false" schemaversion="5">
+<suite id="s1" name="UAT-Lab11-002" source="C:\Users\Advice ST\Desktop\งาน\SQA\LabAssignment\Lab11\UAT-Lab11-002.robot">
+<test id="s1-t1" name="TC01 Open Insurance Main Page" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:03.619094" level="INFO">Opening browser 'Chrome' to base url 'https://sampleapp.tricentis.com/101/index.php'.</msg>
+<arg>${URL}index.php</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-12T03:29:03.619094" elapsed="11.119466"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-12T03:29:14.740025" elapsed="0.021995"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:14.766761" level="INFO">Current location contains 'index.php'.</msg>
+<arg>index.php</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-12T03:29:14.763361" elapsed="0.003400"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Vehicle Insurance</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-12T03:29:14.767839" elapsed="0.011656"/>
+</kw>
+<status status="PASS" start="2026-09-12T03:29:03.618097" elapsed="11.161398"/>
+</test>
+<test id="s1-t2" name="TC02 Enter Invalid Vehicle Data for Automobile" line="19">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:14.782014" level="INFO">Clicking element 'id=nav_automobile'.</msg>
+<arg>id=nav_automobile</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:14.781003" elapsed="6.628490"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Vehicle Data</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.409493" elapsed="0.010009"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:21.424007" level="INFO">Current location contains 'app.php'.</msg>
+<arg>app.php</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.420501" elapsed="0.003506"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:21.425014" level="INFO">Selecting options from selection list 'id=make' by label BMW.</msg>
+<arg>id=make</arg>
+<arg>BMW</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.424007" elapsed="0.075758"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:21.499765" level="INFO">Typing text '9999' into text field 'id=engineperformance'.</msg>
+<arg>id=engineperformance</arg>
+<arg>9999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.499765" elapsed="0.074877"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:21.574642" level="INFO">Typing text '12/31/2030' into text field 'id=dateofmanufacture'.</msg>
+<arg>id=dateofmanufacture</arg>
+<arg>12/31/2030</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.574642" elapsed="0.094008"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:21.669651" level="INFO">Selecting options from selection list 'id=numberofseats' by label 5.</msg>
+<arg>id=numberofseats</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.669651" elapsed="0.055540"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:21.725191" level="INFO">Selecting options from selection list 'id=fuel' by label Electric Power.</msg>
+<arg>id=fuel</arg>
+<arg>Electric Power</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.725191" elapsed="0.054547"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:21.779738" level="INFO">Typing text '999999' into text field 'id=listprice'.</msg>
+<arg>id=listprice</arg>
+<arg>999999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.779738" elapsed="0.062824"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:21.843605" level="INFO">Typing text 'ABCDEFGHIJKLMNO' into text field 'id=licenseplatenumber'.</msg>
+<arg>id=licenseplatenumber</arg>
+<arg>ABCDEFGHIJKLMNO</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.843605" elapsed="0.082140"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:21.926766" level="INFO">Typing text '999999' into text field 'id=annualmileage'.</msg>
+<arg>id=annualmileage</arg>
+<arg>999999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.926766" elapsed="0.059288"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:21.995910" level="INFO">Current page contains text 'Must be a number between 1 and 2000'.</msg>
+<arg>Must be a number between 1 and 2000</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.986054" elapsed="0.009856"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.005435" level="INFO">Current page contains text 'Must be today or somewhere in the past'.</msg>
+<arg>Must be today or somewhere in the past</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:21.995910" elapsed="0.009525"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.014551" level="INFO">Current page contains text 'Must be a number between 500 and 100000'.</msg>
+<arg>Must be a number between 500 and 100000</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.005435" elapsed="0.009116"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.024066" level="INFO">Current page contains text 'Must be under 10 characters'.</msg>
+<arg>Must be under 10 characters</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.014551" elapsed="0.009515"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.032933" level="INFO">Current page contains text 'Must be a number between 100 and 100000'.</msg>
+<arg>Must be a number between 100 and 100000</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.024066" elapsed="0.008867"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.032933" level="INFO">Clicking button 'id=nextenterinsurantdata'.</msg>
+<arg>id=nextenterinsurantdata</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.032933" elapsed="0.064580"/>
+</kw>
+<status status="PASS" start="2026-09-12T03:29:14.781003" elapsed="7.316510"/>
+</test>
+<test id="s1-t3" name="TC03 Enter Incomplete Insurance Data" line="38">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.098582" level="INFO">Typing text 'a1' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>a1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.098582" elapsed="0.063805"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.163955" level="INFO">Typing text 's12' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>s12</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.162387" elapsed="0.063323"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.226709" level="INFO">Typing text '10/09/2026' into text field 'id=birthdate'.</msg>
+<arg>id=birthdate</arg>
+<arg>10/09/2026</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.226709" elapsed="0.095191"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.322898" level="INFO">Typing text 'a' into text field 'id=streetaddress'.</msg>
+<arg>id=streetaddress</arg>
+<arg>a</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.321900" elapsed="0.056101"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.378999" level="INFO">Typing text '123' into text field 'id=zipcode'.</msg>
+<arg>id=zipcode</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.378001" elapsed="0.066639"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.455160" level="INFO">Current page contains text 'Must be at least 2 characters long and must only contain letters'.</msg>
+<arg>Must be at least 2 characters long and must only contain letters</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.444640" elapsed="0.010520"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.464669" level="INFO">Current page contains text 'You must be between 18 and 70 years of age'.</msg>
+<arg>You must be between 18 and 70 years of age</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.455160" elapsed="0.009509"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.474185" level="INFO">Current page contains text 'Must be at least 3 characters long'.</msg>
+<arg>Must be at least 3 characters long</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.464669" elapsed="0.010516"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.735371" level="INFO">Current page contains text 'Select an option'.</msg>
+<arg>Select an option</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.475185" elapsed="0.260186"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.744525" level="INFO">Current page contains text 'Must be a number between 4 and 8 digits'.</msg>
+<arg>Must be a number between 4 and 8 digits</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.735371" elapsed="0.009154"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.755053" level="INFO">Current page contains text 'Select at least 1 options'.</msg>
+<arg>Select at least 1 options</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.745668" elapsed="0.009385"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.756052" level="INFO">Clicking button 'id=nextenterproductdata'.</msg>
+<arg>id=nextenterproductdata</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.756052" elapsed="0.052765"/>
+</kw>
+<status status="PASS" start="2026-09-12T03:29:22.097513" elapsed="0.712776"/>
+</test>
+<test id="s1-t4" name="TC04 Enter Incomplete Product Data" line="52">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.811289" level="INFO">Typing text '09/12/2026' into text field 'id=startdate'.</msg>
+<arg>id=startdate</arg>
+<arg>09/12/2026</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.810289" elapsed="0.093939"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.905227" level="INFO">Clicking element 'xpath=//label[input[@id="EuroProtection"]]'.</msg>
+<arg>xpath=//label[input[@id="EuroProtection"]]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.905227" elapsed="0.036041"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.948697" level="INFO">Current page contains text 'Must be more than one month in the future'.</msg>
+<arg>Must be more than one month in the future</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.941268" elapsed="0.007429"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.958208" level="INFO">Current page contains text 'Select an option'.</msg>
+<arg>Select an option</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.950191" elapsed="0.008017"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.964726" level="INFO">Current page contains text 'Select at least 1 options'.</msg>
+<arg>Select at least 1 options</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.958208" elapsed="0.007689"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-12T03:29:22.965897" level="INFO">Clicking button 'id=nextselectpriceoption'.</msg>
+<arg>id=nextselectpriceoption</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-12T03:29:22.965897" elapsed="0.058184"/>
+</kw>
+<status status="PASS" start="2026-09-12T03:29:22.810289" elapsed="0.213792"/>
+</test>
+<status status="PASS" start="2026-09-12T03:29:03.284786" elapsed="19.740295"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="UAT-Lab11-002" id="s1" pass="4" fail="0" skip="0">UAT-Lab11-002</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
